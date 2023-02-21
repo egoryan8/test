@@ -1,0 +1,260 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+
+.header_primary {
+    background: #213B7E;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site_menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site_menu > li {
+    display: flex;
+}
+
+.menu_link {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background-color: #213B7E;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration-line: underline;
+    font-family: 'Roboto';
+    cursor: pointer;
+    min-height: 80px;
+} 
+
+.menu_link:hover {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration-line: none;
+}
+
+.login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #EA5D21;
+    width: 153px;
+    min-height: 50px;
+    font-family: 'Roboto';
+    cursor: pointer;
+    border: none;
+}
+
+.login_button:hover {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration-line: none;
+}
+
+/* Popup */
+
+.login_popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 50px;
+    background: #FFFFFF;
+    border: 1px solid #213B7E;;
+    background-color: #FFFFFF;
+}
+
+.login_heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+}
+
+.login_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_form > input {
+    width: 100%;
+    max-width: 500px;
+    min-height: 55px;
+    margin-bottom: 56px;
+    border: 1px solid #808080;
+}
+
+.login_input {
+    width: 444px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 10px;
+}
+
+.login_password {
+    width: 444px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 10px;
+}
+
+.popup_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    text-decoration: none;
+    background: #EA6113;
+    color: #FFFFFF;
+    border: none;
+}
+
+.active_link {
+    color: #213B7E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.show-popup {
+    display: block;
+}
+
+
+
+/* Main */
+
+.main_primary {
+    height: auto;
+    width: 100%;
+    max-width: 911px;
+    margin: 0 auto;
+    flex-grow: 1;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.main_heading {
+    margin: 33px 0 25px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.class_photo {
+    width: 100%;
+    max-width: 523px;
+    max-height: 316px;
+}
+
+.title_h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.intro_text {
+    margin: 10px 0 15px 0;
+    width: 100%;
+    max-width: 634px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.em_cursive {
+    color: rgba(207, 85, 16, 1)
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1300px;
+    min-height: 60px;
+    margin: 0 auto;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #213B7E;
+}
+
+.copyright {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.innop_link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+/* Media */
+
+@media (max-width: 1300px) {
+    .login_button {
+        justify-self: center;
+    }
+    .menu_link {
+        min-height: 50px;
+    }
+    .site_menu {
+        margin: 10px 0;
+    }
+}
